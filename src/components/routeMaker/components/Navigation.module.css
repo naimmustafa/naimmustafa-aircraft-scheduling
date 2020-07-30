@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buttonInactive {
+  composes: button;
+  background-color: silver;
+}

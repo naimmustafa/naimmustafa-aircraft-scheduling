@@ -1,0 +1,94 @@
+.container {
+  padding: 1em;
+}
+
+.topBar {
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aircraftInfo {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-weight: 800;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.aircraft {
+  font-size: large;
+  font-weight: 900;
+  margin-left: 0.5em;
+}
+
+.flightsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  margin: 0.5em 0;
+}
+
+.gridSection {
+  background-color: rgba(255, 255, 255, 0.658);
+  border-radius: 1em;
+  padding: 0.5em;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.listContainer {
+  margin-top: 1em;
+}
+
+.flightCard {
+  background-color: white;
+  border-radius: 0.25em;
+  margin: 0.25em 0;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.flightCardOK {
+  composes: flightCard;
+  background-color: greenyellow;
+}
+
+.flightCard:hover {
+  background-color: rgb(255, 248, 236);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+/* Based on the components and the styling it requires min media queries to run 
+on mobile devices
+as a result this media query below is the only styling that needed to 
+make this app mobile friendly */
+
+@media only screen and (max-width: 600px) {
+  .flightsContainer {
+    grid-template-columns: 1fr;
+  }
+}

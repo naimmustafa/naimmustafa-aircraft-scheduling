@@ -1,0 +1,26 @@
+.flightInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.flightOrigin,
+.flightDestination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flightDestination {
+  align-items: flex-end;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  width: 3em;
+}

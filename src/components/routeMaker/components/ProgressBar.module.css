@@ -1,0 +1,37 @@
+.container {
+  margin-top: 1em;
+}
+
+.barContainer {
+  background-color: skyblue;
+  border-radius: 1em;
+  height: 1.5em;
+  display: flex;
+  z-index: 98;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  padding-left: 1em;
+}
+
+.hour {
+  height: 1.5em;
+  width: 4.16666%;
+}
+
+.hourOK {
+  composes: hour;
+  background-color: greenyellow;
+}
+
+.hour:first-child {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.hour:last-child {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
